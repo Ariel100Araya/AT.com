@@ -3,6 +3,7 @@
         <head>
             <title>The official Ariel Technologies website</title>
             <link rel="stylesheet" type="text/css" href="2020design.css">
+            <link rel="script" href="index.js">
             <style>
                 body,h1 {font-family: "Raleway", sans-serif}
                 body, html {height: 100%}
@@ -22,22 +23,109 @@
                   <p class="white">Ariel Technologies</p>
                 </div>
                 <div class="w3-display-middle">
-                  <h1 class="w3-jumbo w3-animate-opacity">SPECIAL EVENT</h1>
+                  <h1 class="w3-jumbo w3-animate-opacity" id="text1"></h1>
                   <hr class="w3-border-grey" style="margin:auto;width:40%">
-                  <p class="w3-large w3-center">35 days left</p>
+                  <p class="w3-large w3-center" id="demo"></p>
                 </div>
               </div>
+              <script>
+                var countDownDate = new Date("Jul 24, 2020 16:00:00").getTime();
+                
+                var x = setInterval(function() {
+                
+                  var now = new Date().getTime();
+                    
+                  var distance = countDownDate - now;
+                    
+                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    
+                  document.getElementById("demo").innerHTML = days + " days " + hours + " hours "
+  + minutes + " minutes " + seconds + " seconds ";
+                    
+                  if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "Ariel Technologies official website";
+                  }
+                }, 1000);
+                </script>
+                <script>
+                  var countDownDate = new Date("Jul 24, 2020 16:00:00").getTime();
+                
+                var x = setInterval(function() {
+                
+                  var now = new Date().getTime();
+                    
+                  var distance = countDownDate - now;
+                    
+                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    
+                  document.getElementById("text1").innerHTML = "SPECIAL EVENT";
+                    
+                  if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("text1").innerHTML = "Welcome";
+                  }
+                }, 1000);
+                </script>
               <div class="w3-container w3-gray">
                 <h1>What we do</h1>
               </div>
               <div class="row">
                 <div class="column">
-                  <h2>ATC</h2>
+                  <h2 id="text2"></h2>
                   <p class="black">Project ATC (Ariel Technologies Computer) is a operating system (like Windows, MacOS, and ChromeOS). Its main goal is to be faster, more powerful, and more useful than</p>
                   <p class="black">all of them</p>
-                  <a href="ATC.html">Go to the ATC page ></a>
+                  <a href="ATC.html" id="text3">Go to the ATC page ></a>
                 </div>
+                <script>
+                  var countDownDate = new Date("Jul 24, 2020 16:00:00").getTime();
                 
+                var x = setInterval(function() {
+                
+                  var now = new Date().getTime();
+                    
+                  var distance = countDownDate - now;
+                    
+                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    
+                  document.getElementById("text3").innerHTML = "Coming soon";
+                    
+                  if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("text3").innerHTML = "Go to the ATC page";
+                  }
+                }, 1000);
+                </script>
+                <script> var countDownDate = new Date("Jul 24, 2020 16:00:00").getTime();
+                
+                  var x = setInterval(function() {
+                  
+                    var now = new Date().getTime();
+                      
+                    var distance = countDownDate - now;
+                      
+                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                      
+                    document.getElementById("text2").innerHTML = "Coming soon";
+                      
+                    if (distance < 0) {
+                      clearInterval(x);
+                      document.getElementById("text2").innerHTML = "ATC";
+                    }
+                  }, 1000);
+  </script>
                 <div class="column">
                   <h2>Learn code</h2>
                   <p class="black">Learn code is a software group that helps people who want to learn code. It's created to run on old and new operating systems including Windows, ChromeOS, MacOS, and Linux. The paid course will roll out on 2021</p>
