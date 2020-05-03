@@ -281,6 +281,11 @@ h6 {
 /* Imported from user */
 * {box-sizing:border-box}
 
+.black_centered{
+  color: #000;
+  text-align: center;
+}
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
