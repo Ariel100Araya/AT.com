@@ -1,6 +1,6 @@
 /* 2020 fluent design made by Ariel Araya-Madrigal with partnership with W3Schools, Google, Apple, and Microsoft */
 body {
-   color: #b5b5b5;
+   background-color: #000;
 }
 
 .header {
@@ -11,7 +11,7 @@ body {
 
 
 .footer {
-  background-color: #F1F1F1;
+  background-color: #404040;
   text-align: center;
   padding: 10px;
 }
@@ -92,6 +92,8 @@ li.dropdown {
     width: 100%;
   }
 }
+
+/* Colors */
 
 .red {
    color: red;
