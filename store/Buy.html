@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <link src="applepay.js">
+</head>
+<body>
+    <h1>Payment</h1>
+    <script>
+        if (window.ApplePaySession) {
+            var merchantIdentifier = 'ArielTechnologies.com.store';
+            var promise = ApplePaySession.canMakePaymentsWithActiveCard(merchantIdentifier);
+            promise.then(function (canMakePayments) {
+                if (canMakePayments)
+                style="-webkit-appearance: -apple-pay-button;
+                    -apple-pay-button-type: plain;
+                    -apple-pay-button-style: white-outline;"
+                lang=en
+        }); }
+    </script>
+</body>
